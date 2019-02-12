@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".actividades.MenuLateralActivity">
-
+    <!-- esta sería la sección normal de un layout-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="Boton De Muestra"/>
     </LinearLayout>
-
+<!--llegaría hasta aquí-->
     <android.support.design.widget.NavigationView
         android:id="@+id/navview"
         android:layout_width="wrap_content"

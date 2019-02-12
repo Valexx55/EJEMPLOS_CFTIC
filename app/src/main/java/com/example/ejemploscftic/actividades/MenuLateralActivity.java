@@ -20,6 +20,7 @@ public class MenuLateralActivity extends AppCompatActivity implements Navigation
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_lateral);
+        this.menu_visible = false;
 
         //iniciamos el menú
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //muestra el boton de para atrás (por defecto)
@@ -56,7 +57,7 @@ public class MenuLateralActivity extends AppCompatActivity implements Navigation
         int npi = item.getOrder();//obtengo el número del punto de interés
 
         Log.d(getClass().getCanonicalName(), "Ha tocado la opción " + menu + " " +npi);
-
+        drawerLayout.closeDrawers();
         menu_visible = false;
 
         return false;

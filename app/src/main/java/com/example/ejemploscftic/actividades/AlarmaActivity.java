@@ -22,7 +22,7 @@ public class AlarmaActivity extends AppCompatActivity {
     {
         Calendar calendar_actual = Calendar.getInstance();
 
-        long tiempo = calendar_actual.getTimeInMillis() + 60000; //en 1 min, 60 mil ms, saltará la alarma
+        long tiempo = calendar_actual.getTimeInMillis() + 6000; //en 1 min, 60 mil ms, saltará la alarma
 
         Intent intentAlarm = new Intent(this, AlarmaReceiver.class);
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);

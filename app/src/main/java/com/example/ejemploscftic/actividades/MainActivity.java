@@ -7,6 +7,8 @@ import android.os.Bundle;
 import com.example.ejemploscftic.R;
 import com.example.ejemploscftic.actividades.ItunesActivity;
 
+import java.net.URLEncoder;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         //startActivity(new Intent (this, MenuLateralActivity.class));
         //startActivity(new Intent (this, DescargaActivity.class));
         //startActivity(new Intent (this, VerFotosActivity.class));
-        startActivity(new Intent (this, AlarmaActivity.class));
+        //startActivity(new Intent (this, AlarmaActivity.class));
+        startActivity(new Intent (this, BaseDatosActivity.class));
 
     }
 }
