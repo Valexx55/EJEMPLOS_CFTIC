@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         //startActivity(new Intent (this, DescargaActivity.class));
         //startActivity(new Intent (this, VerFotosActivity.class));
         //startActivity(new Intent (this, AlarmaActivity.class));
-        startActivity(new Intent (this, BaseDatosActivity.class));
+        //startActivity(new Intent (this, BaseDatosActivity.class));
+        startActivity(new Intent (this, TabLayoutActivity.class));
 
     }
 }
