@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".actividades.BaseDatosActivity"></activity>
+        <activity android:name=".actividades.TabLayoutActivity"></activity>
+        <activity android:name=".actividades.BaseDatosActivity" />
 
         <receiver
             android:name=".receiver.AlarmaReceiver"
