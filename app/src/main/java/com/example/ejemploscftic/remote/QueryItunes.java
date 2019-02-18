@@ -21,7 +21,9 @@ public class QueryItunes extends AsyncTask<String, Void, ResultadoCanciones> {
 
 
     private Context context;
-    private final static String URI_ITUNES = "https://itunes.apple.com/search/?media=music&term=";
+    private final static String URI_ITUNES =
+            "https://itunes.apple.com/search/?media=music&term=";
+    //&attribute=artistTerm albumTerm songTerm
 
     public QueryItunes(Context c)
     {

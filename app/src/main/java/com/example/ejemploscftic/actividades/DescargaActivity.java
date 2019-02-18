@@ -64,9 +64,9 @@ public class DescargaActivity extends AppCompatActivity {
         request.setDescription("Musica ");
         request.setTitle("Itunes muestra mp3 ");
         request.setMimeType("audio/mp3");
-        //request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_HIDDEN);//necesitamos android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_HIDDEN);//necesitamos android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
         //request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE);//se ve mientras, pero se quita al completarse
-        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+        //request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
 
 
         String ruta_completa_fichero =  Environment.getExternalStorageDirectory().getPath()+"/cancion1.mp3";
@@ -85,7 +85,7 @@ public class DescargaActivity extends AppCompatActivity {
         DescargaCompletaPodcastReciver receiver = null;
 
             //opcional, para dibujar una ventana
-            dibujarProgressBar();
+            //dibujarProgressBar();
             //importante, programo la vuelta "pongo a escuchar el fin de la descarga a mi Receiver"
             filter = new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE);
             receiver = new DescargaCompletaPodcastReciver(this);
@@ -120,8 +120,8 @@ public class DescargaActivity extends AppCompatActivity {
     }
 
     public void descargar (View v) {
-    //descargarFichero(URL_CANCION_COCIDITO);
-    try {
+    descargarFichero(URL_CANCION_COCIDITO);
+    /*try {
         MediaPlayer mp = new MediaPlayer();
         mp.setDataSource(URL_CANCION_COCIDITO);
         mp.prepare();
@@ -130,7 +130,7 @@ public class DescargaActivity extends AppCompatActivity {
     catch (Exception e)
     {
         Log.e("MIAPP", "Error al reproducir de url", e);
-    }
+    }*/
     }
 
     public void reproducirInvisible (View v) {
@@ -141,6 +141,7 @@ public class DescargaActivity extends AppCompatActivity {
             mediaPlayer.setLooping(false);
             mediaPlayer.setVolume(100, 100);
             mediaPlayer.start();
+
         }
         catch (Exception e)
         {
@@ -184,7 +185,7 @@ public class DescargaActivity extends AppCompatActivity {
 
     public void actualizarVentanaTrasDescarga (boolean fue_bien) {
 
-        mProgressDialog.dismiss();
+        //mProgressDialog.dismiss();
         if (fue_bien) {
             ImageView iv = findViewById(R.id.img_reproducir);
             iv.setClickable(true);

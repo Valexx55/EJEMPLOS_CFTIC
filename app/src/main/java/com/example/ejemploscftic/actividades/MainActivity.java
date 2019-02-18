@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         //startActivity(new Intent (this, ItunesActivity.class));
         //startActivity(new Intent (this, RedDisponibleActivity.class));
         //startActivity(new Intent (this, MenuLateralActivity.class));
-        //startActivity(new Intent (this, DescargaActivity.class));
+        startActivity(new Intent (this, DescargaActivity.class));
         //startActivity(new Intent (this, VerFotosActivity.class));
         //startActivity(new Intent (this, AlarmaActivity.class));
         //startActivity(new Intent (this, BaseDatosActivity.class));
-        startActivity(new Intent (this, TabLayoutActivity.class));
+        //startActivity(new Intent (this, TabLayoutActivity.class));
 
     }
 }

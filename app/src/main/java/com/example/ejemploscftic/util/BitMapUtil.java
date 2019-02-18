@@ -23,7 +23,8 @@ public class BitMapUtil {
     private static final String SUFIJO_FOTO = ".jpg";
     private static final String PREFIJO_FOTO = "MY_PIC";
     //public static final String RUTA_DIR_FOTOS = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getPath()+"/Camera";
-    public static final String RUTA_DIR_FOTOS = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
+    public static final String RUTA_DIR_FOTOS =
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
     //public static final String RUTA_DIR_FOTOS = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getPath()+"/BDIASBEBE";
 
 

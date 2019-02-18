@@ -42,6 +42,9 @@ public class ScreenFragment1 extends Fragment {
         lista_palabras.add("Palabra 4");
         lista_palabras.add("Palabra 5");
         lista_palabras.add("Palabra 6");
+        lista_palabras.add("Palabra 7");
+        lista_palabras.add("Palabra 8");
+        lista_palabras.add("Palabra 9");
         this.adapterTextoHolder = new AdapterTextoHolder(lista_palabras);
 
         this.recyclerView.setAdapter(adapterTextoHolder);

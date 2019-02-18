@@ -23,7 +23,7 @@
 
     <ImageButton
         android:id="@+id/img_reproducir"
-        android:onClick="reproducirInvisible"
+        android:onClick="reproducirVisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
